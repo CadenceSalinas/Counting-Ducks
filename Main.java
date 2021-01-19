@@ -35,9 +35,12 @@ public class Main
 				System.out.println("Thanks, pal!");
 			}
 		});
+		//---------Label 1-----------
+		JLabel label1 = new JLabel("Count the ducks");
 
 		panel1.add(button1);
 		panel1.add(button2);
+		panel1.add(label1);
 
 		frame1.getContentPane().add(panel1);
 	}//end main method
