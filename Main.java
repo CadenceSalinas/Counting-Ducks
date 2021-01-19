@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*; //enables all events
+import java.awt.*;
 
 public class Main
 {
@@ -10,6 +11,9 @@ public class Main
 		//this line is required.
 		frame1.setSize(500,500);
 		frame1.setVisible(true);
+
+		//------Panel to hold the buttons-----
+		JPanel panel1 = new JPanel(new GridLayout(2,2, 20,20));
 
 		//-------Button 1-----
 		JButton button1 = new JButton("Click me!");
@@ -32,8 +36,9 @@ public class Main
 			}
 		});
 
-		frame1.add(button1);
-		frame1.add(button2);
+		panel1.add(button1);
+		panel1.add(button2);
 
+		frame1.getContentPane().add(panel1);
 	}//end main method
 }//end main class
